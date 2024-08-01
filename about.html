@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ahmet Erdem | About Me</title>
+   
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto:wght@400&display=swap" rel="stylesheet">
+</head>
+<style>
+    
+
+
+    
+</style>
+<body>
+    <style></style>
+
+    <section class="parallax-section">
+        <div class="about-content">
+            <h1 class="glitch" data-text=""></h1>
+            <p class="subtitle">Benim Hikayem</p>
+            <div class="about-highlights">
+                <div class="about-image">
+                    <img src="project1.jpg" alt="Benim Fotoğrafım" width="200" height="200">
+                </div>
+                <div class="about-text">
+                    <p>Merhaba! Ben [İsminiz], tutkulu bir web geliştiricisiyim. Yıllar boyunca çeşitli projelerde yer aldım ve sürekli olarak kendimi geliştirmeye çalışıyorum. Web teknolojileri ve tasarım konularında derin bir bilgiye sahibim. Amacım, kullanıcı dostu ve estetik açıdan hoş web siteleri ve uygulamalar geliştirmektir.</p>
+                    <p>Boş zamanlarımda doğa yürüyüşleri yapmayı, fotoğraf çekmeyi ve yeni teknolojileri keşfetmeyi seviyorum. Ayrıca, kodlama ve problem çözme yeteneklerimi geliştirmek için sürekli olarak yeni projeler üzerinde çalışıyorum.</p>
+                    <p>Eğer benimle çalışmak veya sadece sohbet etmek isterseniz, lütfen iletişim sayfamdan bana ulaşın.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="skills-section">
+        <div class="skills-container">
+            <div class="skill-category">
+                <h3>Frontend</h3>
+                <ul>
+                    <li>HTML5</li>
+                    <li>CSS3</li>
+                    <li>JavaScript</li>
+                    <li>React</li>
+                    <li>Vue.js</li>
+                </ul>
+            </div>
+            <div class="skill-category">
+                <h3>Backend</h3>
+                <ul>
+                    <li>Node.js</li>
+                    <li>Express.js</li>
+                    <li>Python</li>
+                    <li>Django</li>
+                    <li>PHP</li>
+                </ul>
+            </div>
+            <div class="skill-category">
+                <h3>Diğer</h3>
+                <ul>
+                    <li>Git & GitHub</li>
+                    <li>SQL & NoSQL</li>
+                    <li>Docker</li>
+                    <li>RESTful API'ler</li>
+                    <li>GraphQL</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- JS for smooth scrolling and cursor effects -->
+    <script>
+        // Smooth scrolling for internal links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Cursor effect
+        document.addEventListener('mousemove', function (e) {
+            document.querySelector('.cursor').style.transform = `translate(${e.clientX}px, ${e.clientY}px)`;
+            document.querySelector('.cursor-follower').style.transform = `translate(${e.clientX}px, ${e.clientY}px)`;
+        });
+    </script>
+</body>
+
+</html>
